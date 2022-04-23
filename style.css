@@ -1,0 +1,57 @@
+
+:root{
+
+    --black: #000000;
+    --ming: #006D77;
+    --lavender_gray:#D3CDD7;
+    --granite_gray: #6E6362;
+    --beau_blue: #C6DDF0;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--lavender_gray);
+    background-image:url(images/Lock-icon.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+main{
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    background-color: var(--granite_gray);
+    margin-left: 63px;  
+    width: 55%;
+    height: 500px;
+    padding: 15px;
+    border-radius: 0px 5px 5px 0px;
+}
+aside {
+    margin: auto;
+    display: flex; 
+    justify-content: right;
+    background-color: var(--beau_blue);
+    width: 31%;
+    height: 500px;
+    padding: 15px;
+    border-radius: 5px 0px 0px 5px;
+}
+footer{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    background-color: var(--black);
+    color: var(--lavender_gray);
+}
+
+a{
+    text-decoration: none;
+    color: var(--lavender_gray);
+}
+a:hover {
+    color:var(--ming);
+}
