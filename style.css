@@ -18,7 +18,7 @@ body{
     background-color: var(--softblue);
 }
 
-img{
+img#padlock{
     position: absolute;
     top: 27px;
     left: 70px;
@@ -37,11 +37,6 @@ section{
     padding: 15px; 
 }
 
-div{
-    height: 70%;
-    width: 30%;   
-}
-
 .text{
     height: 70%;
     width: 30%;
@@ -49,10 +44,7 @@ div{
     top: 30px;
     left: 720px;   
     border-radius: 30px;
-}
-.text::placeholder{
-    font-size: 15px;
-
+    border: none;
 }
 
 .message {
@@ -62,21 +54,52 @@ div{
     top: 30px;
     left: 300px;   
     background-color: var(--softblue);
+    border: none;
+}
+#encrypt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    background: linear-gradient(#55868C, #307473 70%);
+    padding: 10px;
+    border: none;
+    color: var(--darkblue);
+}
+
+#decrypt{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    background: linear-gradient(#307473, #307473);
+    padding: 10px;
+    border: none;
+    color: var(--darkblue);
 }
 
 footer{
-    width: 98%;
-    margin-bottom: 0%;
+
+    width: 99.3%;
     text-align: center;
-    padding: 10px;
+    word-spacing: 5px;
+    padding: 5px;
     background-color: var(--mediumblue);
     color: var(--darkblue);
 }
 
-a{
-    text-decoration: none;
-    color: var(--darkblue);
+img#github{
+    width: 25px;
+    height: 27px;
+    margin: auto;
+    
 }
-a:hover {
-    color:var(--blue);
+
+img#linkedin{
+    width: 25px;
+    height: 27px;
+    margin: auto;
+    
 }
