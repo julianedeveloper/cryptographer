@@ -24,9 +24,8 @@ img#padlock{
     left: 70px;
     width: 70px;
     height: 80px;
-    
-
 }
+
 section{
     margin: auto;
     margin-top: 40px;
@@ -37,26 +36,53 @@ section{
     padding: 15px; 
 }
 
-.text{
-    height: 70%;
+.message{
+    height: 65%;
     width: 30%;
     position: absolute;
     top: 30px;
     left: 720px;   
-    border-radius: 30px;
-    border: none;
+    border: transparent;
+}
+p {
+    position: absolute;
+    top: 450px;
+    left: 370px;
+    color: var(--darkblue);
+    font-size: 12px;
+}
+img#attention{
+    position: absolute;
+    top: 440px;
+    left: 340px;
+    width: 25px;
+    height: 27px;
+
+    
+
 }
 
-.message {
-    height: 70%;
+.text {
+    height: 65%;
     width: 30%;
     position: absolute;
     top: 30px;
     left: 300px;   
-    background-color: var(--softblue);
-    border: none;
+    background-color: var(--softblue);  
+    border: transparent;
+}
+
+input::placeholder{
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    text-align: center;
+    color: var(--darkblue);
 }
 #encrypt{
+    position: absolute;
+    top: 489px;
+    left: 330px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     border-radius: 5px;
@@ -69,6 +95,9 @@ section{
 }
 
 #decrypt{
+    position: absolute;
+    top: 490px;
+    left: 520px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     border-radius: 5px;
