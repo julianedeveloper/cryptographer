@@ -37,12 +37,15 @@ section{
 }
 
 .message{
-    height: 65%;
+    height: 55%;
     width: 30%;
     position: absolute;
+    padding: 10px;
     top: 30px;
     left: 720px;   
+    background-color: var(--softblue);
     border: transparent;
+    outline: 0;
 }
 p {
     position: absolute;
@@ -63,13 +66,15 @@ img#attention{
 }
 
 .text {
-    height: 65%;
+    height: 55%;
     width: 30%;
     position: absolute;
+    padding: 10px;
     top: 30px;
     left: 300px;   
-    background-color: var(--softblue);  
+    background-color: white;  
     border: transparent;
+    outline: 0;
 }
 
 input::placeholder{
@@ -86,26 +91,28 @@ input::placeholder{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     border-radius: 5px;
-    width: 150px;
+    width: 350px;
     height: 35px;
     background: linear-gradient(#55868C, #307473 70%);
     padding: 10px;
     border: none;
+    box-shadow: 1px 1px 2px var(--darkblue);
     color: var(--darkblue);
 }
 
 #decrypt{
     position: absolute;
     top: 490px;
-    left: 520px;
+    left: 770px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     border-radius: 5px;
-    width: 150px;
+    width: 350px;
     height: 35px;
     background: linear-gradient(#307473, #307473);
     padding: 10px;
     border: none;
+    box-shadow: 1px 1px 2px var(--darkblue);
     color: var(--darkblue);
 }
 
