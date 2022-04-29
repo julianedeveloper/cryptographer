@@ -36,44 +36,15 @@ section{
     padding: 15px; 
 }
 
-.message{
-    height: 55%;
-    width: 30%;
-    position: absolute;
-    padding: 10px;
-    top: 30px;
-    left: 720px;   
-    background-color: var(--softblue);
-    border: transparent;
-    outline: 0;
-}
-p {
-    position: absolute;
-    top: 450px;
-    left: 370px;
-    color: var(--darkblue);
-    font-size: 12px;
-}
-img#attention{
-    position: absolute;
-    top: 440px;
-    left: 340px;
-    width: 25px;
-    height: 27px;
-
-    
-
-}
-
 .text {
     height: 55%;
-    width: 30%;
+    width: 27%;
     position: absolute;
     padding: 10px;
-    top: 30px;
+    top: 100px;
     left: 300px;   
     background-color: white;  
-    border: transparent;
+    border: 0.5px solid var(--darkblue);
     outline: 0;
 }
 
@@ -84,12 +55,39 @@ input::placeholder{
     text-align: center;
     color: var(--darkblue);
 }
+.message{
+    height: 55%;
+    width: 27%;
+    position: absolute;
+    padding: 10px;
+    top: 100px;
+    left: 720px;   
+    background-color: white;
+    border: 0.5px solid var(--darkblue);
+    outline: 0;
+}
+p {
+    position: absolute;
+    top: 50px;
+    left: 550px;
+    color: var(--darkblue);
+    font-size: 12px;
+}
+img#attention{
+    position: absolute;
+    top: 40px;
+    left: 520px;
+    width: 25px;
+    height: 27px;
+}
+
 #encrypt{
     position: absolute;
     top: 489px;
-    left: 330px;
+    left: 320px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    font-weight: bolder;
     border-radius: 5px;
     width: 350px;
     height: 35px;
@@ -103,9 +101,10 @@ input::placeholder{
 #decrypt{
     position: absolute;
     top: 490px;
-    left: 770px;
+    left: 745px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    font-weight: bolder;
     border-radius: 5px;
     width: 350px;
     height: 35px;
