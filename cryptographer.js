@@ -73,7 +73,7 @@ function buttonDecrypt() {
             
         }
 
-        document.querySelector('#userTxt').value = encryptedTxt;
+        document.querySelector('#encryptTxt').value = txt;
 
 
 
