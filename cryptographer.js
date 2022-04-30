@@ -1,82 +1,61 @@
+//var buttonDecrypt = document.querySelector('#decrypt');
+//buttonDecrypt.addEventListener('click', teste);
+
 function buttonEncrypt() {
     let userTxt = document.querySelector('#txt').value; // text encrypted already
     let encryptedTxt = "";
     if (userTxt != "") {
 
         for (var i = 0; i < userTxt.length; i++) {
-            switch (userTxt[i])  {
-                case 'a' :
+            switch (userTxt[i]) {
+                case 'a':
                     encryptedTxt += 'ai';
                     break;
 
-                case 'e' :
+                case 'e':
                     encryptedTxt += 'enter';
                     break;
-                
-                case 'i' :
+
+                case 'i':
                     encryptedTxt += 'imes';
                     break;
 
-                case 'o' :
+                case 'o':
                     encryptedTxt += 'ober';
                     break;
 
-                case 'u' :
+                case 'u':
                     encryptedTxt += 'ufat';
                     break;
 
-                default: encryptedTxt += userTxt[i] ;
+                default: encryptedTxt += userTxt[i];
+                console.log(encryptedTxt);
             }
-            
+
         }
 
         document.querySelector('#encrypted-txt').value = encryptedTxt;
+        cleanScream();
+
 
     }
 
-function cleanScream(){
-    document.querySelector('#txt').reset;
+    function cleanScream() {
+        document.querySelector('#txt').value = "";
+    }
 }
 
 function buttonDecrypt() {
-    cleanScream();
-
-    let txt = document.querySelector('#txt').value; // text encrypted already
+    let txt = document.querySelector('.message').value; // text encrypted already
     let decryptedTxt = "";
-    if (encrypted.Txt != "") {
-
-        for (var i = 0; i < txt.length; i++) {
-            
-            switch (txt[i])  {
-                case 'ai' :
-                    encryptedTxt += 'a';
-                    break;
-
-                case 'enter' :
-                    encryptedTxt += 'e';
-                    break;
-                
-                case 'imes' :
-                    encryptedTxt += 'i';
-                    break;
-
-                case 'ober' :
-                    encryptedTxt += 'o';
-                    break;
-
-                case 'ufat' :
-                    encryptedTxt += 'u';
-                    break;
-
-                default: decryptedTxt += txt[i] ;
-            }
-            
-        }
-
-        document.querySelector('#encryptTxt').value = txt;
-
-
-
-        }
+    if (txt != "") {
+        replaceAll('ai','a');
+        replaceAll('enter', 'e');
+        replaceAll('imes', 'i');
+        replaceAll('ober', 'o');
+        replaceAll('ufat', 'u');   
     }
-}
+    document.querySelector('#decrypted.txt').value = decryptedTxt;
+}    
+
+
