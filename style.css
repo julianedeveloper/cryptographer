@@ -15,7 +15,7 @@
 }
 
 body{
-    background-color: var(--softblue);
+    background-color: var(--softblue);    
 }
 
 img#padlock{
@@ -34,9 +34,11 @@ section{
     width: 88.5%;
     height: 500px;
     padding: 15px; 
+    min-width: 300px;
+    max-width: 1000px;
 }
 
-.text {
+.userTxt {
     height: 55%;
     width: 27%;
     position: absolute;
