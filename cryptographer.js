@@ -1,3 +1,17 @@
+function autoResize(){
+    txtAreaUser = document.querySelector('.userTxt');
+        while (txtAreaUser.scrollHeight > txtAreaUser.offsetHeight)
+        {
+            txtAreaUser.rows += 1;
+        }
+    txtArea = document.querySelector('.message'); 
+        while (txtArea.scrollHeight > txtArea.offsetHeight)
+        {
+            txtArea.rows += 1;
+        }
+}
+autoResize();
+
 function buttonEncrypt() {
     let first = document.querySelector('.userTxt').value; // text encrypted already
     let encryptedTxt = "";
@@ -32,38 +46,36 @@ function buttonEncrypt() {
         }
         document.querySelector('.message').value = encryptedTxt;
         console.log(encryptedTxt);
-
+       
 
     }
 }
+
+cleanScream();
 
 function cleanScream() {
     document.querySelector('.userTxt').value = "";
+    document.querySelector('.message').value = "";
 }
-cleanScream();
 
-function buttonDecrypt(){
+function buttonDecrypt() {
     let second = document.querySelector('.message').value; //take the .message and put the text encrypted as value.
     let decryptedTxt = ""; // here it's saved all the values, becaming the decryptTxt value.
-    if (second != ""){  // if the second let it's not empty, has a text, so...
-        for (var i = 0; i < second.length; i++){
-            switch(second[i]){
-                case 'ai':
-                    decryptedTxt += 'a';
-                    break;
-                case 'enter':
-                    case 'e':
-                    decryptedTxt += 'e';
-                case 'imes':
-                    decryptedTxt += 'i';
-                case 'ober':
-                    decryptedTxt += 'o';
-                case 'ufat':
-                    decryptedTxt += 'u';
+    if (second != "") {  // if the second let it's not empty, has a text, so...
+        decryptedTxt.replaceAll('ai', 'a');
+        decryptedTxt.replaceAll('enter', 'e');
+        decryptedTxt.replaceAll('imes', 'i');
+        decryptedTxt.replaceAll('ober', 'o');
+        decryptedTxt.replaceAll('uber', 'u');
 
-                document.querySelector('.userTxt').value = decryptedTxt;
-                cleanScream();
-            }
-        }
+        document.querySelector('.message').value = decryptedTxt;
+        cleanScream();
+    } else {
+        document.querySelector('.userTxt').value = decryptedTxt;
     }
+   
 }
+
+cleanScream();
+
+
