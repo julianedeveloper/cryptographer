@@ -14,20 +14,20 @@
         A letra "a" é convertida para "ai"
         A letra "o" é convertida para "ober"
         A letra "u" é convertida para "ufat"-->
-        <img src="images/Lock-icon.png" alt="a padlock" id="padlock">
-
-        <section> 
-                <input type="textarea" class="userTxt" placeholder="Type your message" onkeydown="resize()">  
-                <input type="textarea" class="message" placeholder="Encrypted message" onkeydown="resize()">
-                <img src="images/—Pngtree—attention danger warning sign psd_5464190.png" alt="attention" id="attention">
-                    <p><strong>Use</strong> only uppercases and no comma, score, etc.</p> 
-                </img>        
-                <input type="button" value="encrypt" id="encrypt" onclick="buttonEncrypt()">
-                <input type="button" value="decrypt" id="decrypt" onclick="buttonDecrypt()">
-        </section>
-
+        <header>
+            <h1>Cryptographer</h1>
+            <p><strong>Do not</strong> use uppercases,comma, score, etc.</p>
+        </header>
+                <div id="texts">
+                    <input type="textarea" class="userTxt" placeholder="Type your message" onkeydown="resize()">
+                    <input type="textarea" class="message" placeholder="Encrypted message" onkeydown="resize()">
+                </div>
+                <div id="buttons">
+                    <input type="button" value="encrypt" id="encrypt" onclick="buttonEncrypt()">
+                    <input type="button" value="decrypt" id="decrypt" onclick="buttonDecrypt()">
+                </div>
         <footer>
-            Developed by <strong>Juliane Ferrareto</strong></a>. You can find me at  <a href="https://github.com/julianedeveloper" target="_blank">GitHub</a> and<a href="https://linkedin.com/julianeferrareto" target="_blank"> Linkedin </a>.
+            Developed by Juliane Ferrareto.<a href="https://github.com/julianedeveloper" target="_blank">  GitHub </a>,<a href="https://linkedin.com/julianeferrareto" target="_blank"> Linkedin </a>.
         </footer>
 
         <script src="cryptographer.js"></script>

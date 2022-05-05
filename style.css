@@ -16,38 +16,63 @@
 
 body{
     background-color: var(--softblue);    
+    
 }
 
-img#padlock{
-    position: absolute;
-    top: 27px;
-    left: 70px;
-    width: 70px;
-    height: 80px;
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: var(--orange);
+    color: var(--softblue);
+    font-size: 13px;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
-section{
-    margin: auto;
-    margin-top: 40px;
+h1{
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3px;
+}
+
+p{
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    word-spacing: 2px;
+}
+
+div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-width: 100px;
     background-color: var(--softblue);
     margin-left: 63px;  
+    margin-bottom: 0px;
+    margin-top: 0px;
     width: 88.5%;
-    height: 500px;
+    height: auto;
     padding: 15px; 
-    min-width: 300px;
-    max-width: 1000px;
+    outline: 0px;
 }
 
 .userTxt {
-    height: 55%;
-    width: 27%;
-    position: absolute;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 250px;
+    height: 300px;
+    margin-top: 50px;
     padding: 10px;
-    top: 100px;
-    left: 300px;   
     background-color: white;  
-    border: 0.5px solid var(--darkblue);
-    outline: 0;
+    border: transparent;
+    outline: 0px;
 }
 
 input::placeholder{
@@ -58,79 +83,90 @@ input::placeholder{
     color: var(--darkblue);
 }
 .message{
-    height: 55%;
-    width: 27%;
-    position: absolute;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 250px;
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 15px;
     padding: 10px;
-    top: 100px;
-    left: 720px;   
-    background-color: white;
-    border: 0.5px solid var(--darkblue);
-    outline: 0;
-}
-p {
-    position: absolute;
-    top: 50px;
-    left: 550px;
-    color: var(--darkblue);
-    font-size: 12px;
-}
-img#attention{
-    position: absolute;
-    top: 40px;
-    left: 520px;
-    width: 25px;
-    height: 27px;
+    background-color: var(--softblue);
+    border: transparent;
+    outline: 0px;
 }
 
 #encrypt{
-    position: absolute;
-    top: 489px;
-    left: 320px;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 300px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: bolder;
     border-radius: 5px;
-    width: 350px;
-    height: 35px;
     padding: 10px;
     border: 1px solid var(--orange);
     color: var(--orange);
+    margin-top: 0px;
+    margin-right: 10px;
+}
+#encrypt:hover{
+    border: #2F3061;
+    color: var(--darkblue);
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 #decrypt{
-    position: absolute;
-    top: 490px;
-    left: 745px;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 300px;
+    margin-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: bolder;
     border-radius: 5px;
-    width: 350px;
-    height: 35px;
     padding: 10px;
     border: 1px solid var(--orange);
     color: var(--orange);
 }
+#decrypt:hover{
+    border: #2F3061;
+    color: var(--darkblue);
+    font-size: 20px;
+    font-weight: bolder;
+}
 
 footer{
-    min-width: 30%;
-    max-width: 99.3%;
-    margin-bottom: 0%;
-    text-align: center;
-    word-spacing: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: right;
+    margin-right: 15px;
     padding: 10px;
-    color: var(--darkblue);
+    font-size: 13px;
+    color: var(--blue);
+    
 }
 
 a{
     text-decoration: none;
-    color: #2F3061;
-    font-weight: bolder;
+    color: var(--blue);
+    
 }
 
 a:hover{
-    text-decoration: wavy;
-    color: #DE541E;
+    text-decoration: none;
+    color: var(--darkblue);
     font-weight: bolder;
-}
+    }
