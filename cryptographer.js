@@ -12,6 +12,11 @@ function autoResize(){
 }
 autoResize();
 
+function cleanScream() {
+
+    document.querySelector('.userTxt').value = "";
+
+}
 function buttonEncrypt() {
     let first = document.querySelector('.userTxt').value; // text encrypted already
     let encryptedTxt = "";
@@ -44,19 +49,12 @@ function buttonEncrypt() {
             }
 
         }
-        document.querySelector('.message').value = encryptedTxt;
+        document.querySelector('.userTxt').value = encryptedTxt;
         console.log(encryptedTxt);
-       
-
     }
 }
 
 cleanScream();
-
-function cleanScream() {
-    document.querySelector('.userTxt').value = "";
-    document.querySelector('.message').value = "";
-}
 
 function buttonDecrypt() {
     let second = document.querySelector('.message').value; //take the .message and put the text encrypted as value.
@@ -68,10 +66,7 @@ function buttonDecrypt() {
         decryptedTxt.replaceAll('ober', 'o');
         decryptedTxt.replaceAll('uber', 'u');
 
-        document.querySelector('.message').value = decryptedTxt;
-        cleanScream();
-    } else {
-        document.querySelector('.userTxt').value = decryptedTxt;
+        document.querySelector('.userTxt').value = decryptedTxt;        
     }
    
 }
