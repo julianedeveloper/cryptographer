@@ -23,7 +23,7 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    background-color: var(--orange);
+    background-color: var(--blue);
     color: var(--softblue);
     font-size: 13px;
     justify-content: space-between;
@@ -43,21 +43,24 @@ p{
     word-spacing: 2px;
 }
 
-div{
+main{
+    
+    margin: auto;
+    background-color: var(--blue);
+    width: 70%;
+    height: 100%;
+    
+}
+
+section{
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-    min-width: 100px;
     background-color: var(--softblue);
-    margin-left: 63px;  
-    margin-bottom: 0px;
-    margin-top: 0px;
-    width: 88.5%;
-    height: auto;
-    padding: 15px; 
-    outline: 0px;
+    width: auto;
+    height: auto; 
+
 }
 
 .userTxt {
@@ -70,6 +73,7 @@ div{
     height: 300px;
     margin-top: 50px;
     padding: 10px;
+    text-align: left;
     background-color: white;  
     border: transparent;
     outline: 0px;
@@ -93,7 +97,9 @@ input::placeholder{
     margin-top: 50px;
     margin-left: 15px;
     padding: 10px;
-    background-color: var(--softblue);
+    text-align: left;
+    color: white;
+    background-color: var(--mediumblue );
     border: transparent;
     outline: 0px;
 }
@@ -104,21 +110,20 @@ input::placeholder{
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 300px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bolder;
-    border-radius: 5px;
-    padding: 10px;
-    border: 1px solid var(--orange);
-    color: var(--orange);
-    margin-top: 0px;
+    width: 270px;
+    margin-top: 10px;
     margin-right: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    
 }
 #encrypt:hover{
-    border: #2F3061;
-    color: var(--darkblue);
-    font-size: 20px;
+    border:transparent;
+    color: var(--blue);
+    font-size: 17px;
     font-weight: bolder;
 }
 
@@ -128,20 +133,18 @@ input::placeholder{
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 300px;
-    margin-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 270px;
+    margin-top: 10px;
+    margin-left: 10px;
     font-size: 15px;
-    font-weight: bolder;
     border-radius: 5px;
-    padding: 10px;
-    border: 1px solid var(--orange);
-    color: var(--orange);
+    padding: 5px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
 }
 #decrypt:hover{
-    border: #2F3061;
-    color: var(--darkblue);
-    font-size: 20px;
+    border: var(--blue);
+    font-size: 17px;
     font-weight: bolder;
 }
 
@@ -152,21 +155,28 @@ footer{
     align-items: center;
     align-content: center;
     justify-content: right;
-    margin-right: 15px;
+    margin-top: 70px;
+    margin-right: 400px;
+    background-color: none;
     padding: 10px;
     font-size: 13px;
-    color: var(--blue);
+    color: var(--softblue);
     
 }
 
 a{
     text-decoration: none;
-    color: var(--blue);
+    color: var(--softblue);
     
 }
 
 a:hover{
     text-decoration: none;
-    color: var(--darkblue);
+    color: var(--orange);
     font-weight: bolder;
     }
+
+hr{
+    color: var(--softblue);
+    border: 0.5px solid var(--softblue);
+}

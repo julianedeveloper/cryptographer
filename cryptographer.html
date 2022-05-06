@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +9,36 @@
     <link rel="stylesheet" href="style.css">
     <title>Cryptographer</title>
 </head>
+
 <body>
     <!--A letra "e" é convertida para "enter"
         A letra "i" é convertida para "imes"
         A letra "a" é convertida para "ai"
         A letra "o" é convertida para "ober"
         A letra "u" é convertida para "ufat"-->
-        <header>
-            <h1>Cryptographer</h1>
-            <p><strong>Do not</strong> use uppercases,comma, score, etc.</p>
-        </header>
-                <div id="texts">
-                    <input type="textarea" class="userTxt" placeholder="Type your message" onkeydown="resize()">
-                    <input type="textarea" class="message" placeholder="Encrypted message" onkeydown="resize()">
-                </div>
-                <div id="buttons">
-                    <input type="button" value="encrypt" id="encrypt" onclick="buttonEncrypt()">
-                    <input type="button" value="decrypt" id="decrypt" onclick="buttonDecrypt()">
-                </div>
+    <header>
+        <h1>Cryptographer</h1>
+        <p><strong>Do not</strong> use uppercases,comma, score, etc.</p>
+    </header>
+    <main>
+        <section id="texts">
+            <input type="textarea" class="userTxt" placeholder="Type your message" onkeydown="resize()">
+            <input type="textarea" class="message" placeholder="Encrypted message" onkeydown="resize()">
+        </section>
+        <section id="buttons">
+            <input type="button" value="encrypt" id="encrypt" onclick="buttonEncrypt()">
+            <input type="button" value="decrypt" id="decrypt" onclick="buttonDecrypt()">
+        </section>
         <footer>
-            Developed by Juliane Ferrareto.<a href="https://github.com/julianedeveloper" target="_blank">  GitHub </a>,<a href="https://linkedin.com/julianeferrareto" target="_blank"> Linkedin </a>.
+            <hr size="1" width="29%"> <!--size define the tracejado height -->
+            Developed by Juliane Ferrareto.<a href="https://github.com/julianedeveloper" target="_blank"> GitHub </a>,<a
+                href="https://linkedin.com/julianeferrareto" target="_blank"> Linkedin </a>.
         </footer>
+    </main>
 
-        <script src="cryptographer.js"></script>
-    
+
+    <script src="cryptographer.js"></script>
+
 </body>
+
 </html>

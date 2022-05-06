@@ -76,6 +76,6 @@ function buttonDecrypt() {
    
 }
 
-cleanScream();
+
 
 
