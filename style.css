@@ -113,20 +113,17 @@ input::placeholder{
     align-content: center;
     width: 150px;
     margin-top: 10px;
-    margin-left: -170px;
     font-size: 15px;
     border-radius: 5px;
     padding: 5px;
-    border: 1px solid var(--blue);
+    border: 2px solid var(--blue);
     outline: 0;
     color: var(--blue);
     
 }
 #encrypt:hover{
-    border:transparent;
-    color: var(--blue);
-    font-size: 17px;
-    font-weight: bolder;
+    color: var(--orange);
+    font-size: 16px;
 }
 
 #decrypt{
@@ -137,18 +134,42 @@ input::placeholder{
     align-content: center;
     width: 150px;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 5px;
     font-size: 15px;
     border-radius: 5px;
     padding: 5px;
-    border: 1px solid var(--blue);
+    border: 2px solid var(--blue);
     outline: 0;
     color: var(--blue);
 }
 #decrypt:hover{
-    border: var(--blue);
-    font-size: 17px;
-    font-weight: bolder;
+    color: var(--orange);
+    font-size: 16px;
+}
+div.copy{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 90px;  
+}
+#copy{
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid var(--blue);
+    outline: 0;
+    color: var(--blue);
+}
+#copy:hover{
+    color: var(--orange);
+    font-size: 16px;
 }
 
 footer{
@@ -168,8 +189,7 @@ footer{
 
 a{
     text-decoration: none;
-    color: var(--mediumblue);
-    
+    color: var(--mediumblue); 
 }
 
 a:hover{
@@ -179,6 +199,7 @@ a:hover{
     }
 
 hr{
-    color: var(--mediumblue);
-    border: 1px solid var(--mediumblue);
+    display: flex;
+    
+    border: 0.50px solid var(--mediumblue);
 }

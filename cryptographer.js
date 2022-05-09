@@ -1,23 +1,12 @@
-function autoResize(){
-    txtAreaUser = document.querySelector('.userTxt');
-        while (txtAreaUser.scrollHeight > txtAreaUser.offsetHeight)
-        {
-            txtAreaUser.rows += 1;
-        }
-    txtArea = document.querySelector('.message'); 
-        while (txtArea.scrollHeight > txtArea.offsetHeight)
-        {
-            txtArea.rows += 1;
-        }
-}
-autoResize();
 
 function cleanScream() {
 
-    document.querySelector('.userTxt').value = "";
+    document.querySelector('.message').value = "";
 
 }
+
 function buttonEncrypt() {
+
     let first = document.querySelector('.userTxt').value; // text encrypted already
     let encryptedTxt = "";
     if (first != "") {
@@ -49,27 +38,49 @@ function buttonEncrypt() {
             }
 
         }
-        document.querySelector('.userTxt').value = encryptedTxt;
+        document.querySelector('.message').value = encryptedTxt;
         console.log(encryptedTxt);
     }
 }
-
 cleanScream();
 
 function buttonDecrypt() {
+    debugger
     let second = document.querySelector('.message').value; //take the .message and put the text encrypted as value.
     let decryptedTxt = ""; // here it's saved all the values, becaming the decryptTxt value.
     if (second != "") {  // if the second let it's not empty, has a text, so...
-        decryptedTxt.replaceAll('ai', 'a');
-        decryptedTxt.replaceAll('enter', 'e');
-        decryptedTxt.replaceAll('imes', 'i');
-        decryptedTxt.replaceAll('ober', 'o');
-        decryptedTxt.replaceAll('uber', 'u');
-
-        document.querySelector('.userTxt').value = decryptedTxt;        
+        decryptedTxt = second.replaceAll('ai', 'a');
+        console.log('oi mundo', decryptedTxt);
+        decryptedTxt = decryptedTxt.replaceAll('enter', 'e');
+        console.log(decryptedTxt);
+        decryptedTxt = decryptedTxt.replaceAll('imes', 'i');
+        console.log(decryptedTxt);
+        decryptedTxt = decryptedTxt.replaceAll('ober', 'o');
+        console.log(decryptedTxt);
+        decryptedTxt = decryptedTxt.replaceAll('ufat', 'u');
+        console.log(decryptedTxt);
+        
+        document.querySelector('.userTxt').value = decryptedTxt;
+        console.log(decryptedTxt);
     }
-   
+    
 }
+
+function buttonCopy() {
+
+    let copyText = document.querySelector('.message').value;
+    let copy = "";
+    if (copyText != "") {
+
+        navigator.clipboard.writeText(copyText);
+        document.querySelector('.message').value = copy;
+        console.log(copy);
+    }
+    cleanScream();
+}
+
+
+
 
 
 
