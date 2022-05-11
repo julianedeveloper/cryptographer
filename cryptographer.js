@@ -1,10 +1,3 @@
-
-function cleanScream() {
-
-    document.querySelector('.message').value = "";
-
-}
-
 function buttonEncrypt() {
 
     let first = document.querySelector('.userTxt').value; // text encrypted already
@@ -37,20 +30,27 @@ function buttonEncrypt() {
                     console.log(encryptedTxt);
             }
 
-        }
+        } 
+
         document.querySelector('.message').value = encryptedTxt;
+        document.querySelector('.userTxt').value = "";
         console.log(encryptedTxt);
+
+    } else {
+
+        alert('First of all, insert a message to encrypt, please.');
+
     }
 }
-cleanScream();
 
 function buttonDecrypt() {
-    debugger
-    let second = document.querySelector('.message').value; //take the .message and put the text encrypted as value.
+    console.log(document.querySelector(".message"));
+    let second = document.querySelector('.userTxt').value; //take the .message and put the text encrypted as value.
+    console.log(second);
     let decryptedTxt = ""; // here it's saved all the values, becaming the decryptTxt value.
     if (second != "") {  // if the second let it's not empty, has a text, so...
         decryptedTxt = second.replaceAll('ai', 'a');
-        console.log('oi mundo', decryptedTxt);
+        console.log( decryptedTxt);
         decryptedTxt = decryptedTxt.replaceAll('enter', 'e');
         console.log(decryptedTxt);
         decryptedTxt = decryptedTxt.replaceAll('imes', 'i');
@@ -60,10 +60,14 @@ function buttonDecrypt() {
         decryptedTxt = decryptedTxt.replaceAll('ufat', 'u');
         console.log(decryptedTxt);
         
-        document.querySelector('.userTxt').value = decryptedTxt;
+        
+        document.querySelector('.message').value = decryptedTxt;
         console.log(decryptedTxt);
+    } else {
+
+        alert('First of all, insert a message to decrypt please.');
+
     }
-    
 }
 
 function buttonCopy() {
@@ -75,8 +79,10 @@ function buttonCopy() {
         navigator.clipboard.writeText(copyText);
         document.querySelector('.message').value = copy;
         console.log(copy);
+        alert ('Text sucessfully copied!');
+        document.querySelector('.message').value = "";
+        document.querySelector('.userTxt').value = "";
     }
-    cleanScream();
 }
 
 
