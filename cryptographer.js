@@ -63,6 +63,8 @@ function buttonDecrypt() {
         
         document.querySelector('.message').value = decryptedTxt;
         console.log(decryptedTxt);
+        document.querySelector('.userTxt').value = "";
+        
     } else {
 
         alert('First of all, insert a message to decrypt please.');

@@ -18,27 +18,50 @@
         A letra "u" é convertida para "ufat"-->
     <header>
         <h1>Cryptographer</h1>
-        <p><strong>Do not</strong> use uppercases,comma, score, etc.</p>
+        <a href="https://www.aluracursos.com/" target="_blank"><img src="images/Vector (1).png" alt="alura logo"></a>
     </header>
 
     <main>
-        <section id="texts">
-            <textarea class="userTxt" placeholder="Type your message"></textarea>
-            <textarea class="message"></textarea>
-        </section>
-        <section id="buttons">
-            <input type="button" value="encrypt" id="encrypt" onclick="buttonEncrypt()">
-            <input type="button" value="decrypt" id="decrypt" onclick="buttonDecrypt()">
+        <section class="left-side">
 
-            <div class="copy">
-                <button id="copy" onclick="buttonCopy()">copy</button>
+            <div class="left-txt">
+
+                <textarea class="userTxt" placeholder="only lowercases and no accentuation"></textarea>
+                
             </div>
-        </section>
-        <footer>
-            <p>Developed by Juliane Ferrareto.<a href="https://github.com/julianedeveloper" target="_blank"> GitHub </a>,<a
-                href="https://linkedin.com/julianeferrareto" target="_blank"> Linkedin </a>.</p>
-        </footer>
-    </main>
+            
+            <div class="buttons">
+                
+                <input type="button" value="encrypt" id="encrypt" onclick="buttonEncrypt()">
+                <input type="button" value="decrypt" id="decrypt" onclick="buttonDecrypt()">
+                
+            </div>
+
+            </section>
+
+            <section class="right-side">
+
+                <div class="right-txt">
+                    <textarea class="message"></textarea>
+                </div>
+
+                <div class="copy">
+                    <button id="copy" onclick="buttonCopy()">copy</button>
+                </div>
+
+            </section>
+
+        </main>
+
+            <footer>
+    
+                <p>Developed by Juliane Ferrareto.<a href="https://github.com/julianedeveloper" target="_blank"> GitHub </a>,<a
+                    href="https://linkedin.com/julianeferrareto" target="_blank"> Linkedin </a>.</p>
+    
+            </footer>
+        
+        
+
 
     <script src="cryptographer.js"></script>
 

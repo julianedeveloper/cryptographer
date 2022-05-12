@@ -32,6 +32,16 @@ header{
     
 }
 
+img{
+
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    width: 20px;
+    height: 30px;
+    color: var(--darkblue);
+}
+
 h1{
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -45,79 +55,73 @@ p{
 }
 
 main {
+
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
     background-color: var(--mediumblue);
-    margin: 5%;
-    border-radius: 20px;
 
 }
 
-section{
+section.left-side{
+    
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     align-content: center;
-    height: auto;
+    justify-content: left;
+    width: 30%;
+    height: 450px;
+    padding: 10px;
     background-color: var(--softblue); 
 
 }
 
 .userTxt {
+
     display: flex;
-    flex-flow: nowrap;
     justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 350px;
-    height: 300px;
-    margin-top: 50px;
-    margin-left: 15px;
+    width: 300px;
+    height: 350px;
+    margin-top: 30px;
+    margin-left: 10px;
     padding: 10px;
     text-align: left;
     background-color:var(--softblue);  
     border: transparent;
     outline: 0px;
     resize: none;
+
 }
 
 input::placeholder{
+
     position: absolute;
     top: 50px;
     left: 20px;
     text-align: center;
     color: var(--darkblue);
+
 }
-.message{
+
+div.buttons{
+    
     display: flex;
-    flex-flow: nowrap;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
     align-content: center;
-    width: 50%;
-    height: 300px;
-    margin-top: 50px;
-    margin-right: 15px;
-    margin-left: 15px;
-    padding: 10px;
-    text-align: left;
-    color: white;
-    background-color: var(--mediumblue );
-    border: transparent;
-    border-radius: 10px;
-    outline: 0px;
-    resize: none;
+    justify-content: center;
+    margin-top: 12px;
+    
 }
 
 #encrypt{
-    display: flex;
-    flex-flow: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100px;
+   
+    width: 150px;
     margin-top: 10px;
-    margin-left: 5px;
+    margin-right: 17px;
     font-size: 15px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px black;
@@ -129,21 +133,20 @@ input::placeholder{
     font-weight: bolder;
     
 }
+
 #encrypt:hover{
+
     background-color: transparent;
     color: var(--orange);
     font-size: 16px;
+
 }
 
 #decrypt{
-    display: flex;
-    flex-flow: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 100px;
+    
+    width: 150px;
     margin-top: 10px;
-    margin-left: 5px;
+    margin-right: -12px;
     font-size: 15px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px black;
@@ -155,33 +158,71 @@ input::placeholder{
     font-weight: bolder;
 
 }
+
 #decrypt:hover{
+
     background-color: transparent;
     color: var(--orange);
     font-size: 16px;
+
 }
+
+section.right-side{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: right;
+    padding: 10px;
+    width: 30%;
+    height: 450px;
+    background-color: var(--softblue);
+}
+
+.message{
+   
+    width: 300px;
+    height: 400px;
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    text-align: left;
+    color: white;
+    background-color: var(--mediumblue );
+    border: transparent;
+    border-radius: 10px;
+    outline: 0px;
+    resize: none;
+
+}
+
 div.copy{
+
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 5px;
-    margin-left: 90px;  
+    margin-top: -50px;
+    
 }
+
 #copy{
+
     display: flex;
     flex-flow: nowrap;
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 100px;
-    margin-right: 30px;
+    width: 300px;
     font-size: 15px;
+    border: 2px solid var(--blue);
     border-radius: 5px;
     padding: 5px;
-    border: 2px solid var(--blue);
     box-shadow: 2px 2px 5px black;
     outline: 0;
     color: var(--blue);
+
 }
 #copy:hover{
     background-color: var(--blue);
@@ -191,13 +232,18 @@ div.copy{
 }
 
 footer{
+
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     align-content: center;
     justify-content: right;
-    margin-bottom: 100px;
+    margin: auto;
+    margin-bottom: 0px;
+    width: 60%;
+    height: 20px;
+    border-radius: 0px 0px 5px 5px;
     padding: 20px;
     font-size: 13px;
     color: var(--mediumblue);
@@ -206,14 +252,31 @@ footer{
 }
 
 a{
+
     font-family: monospace;
     text-decoration: none;
     color: var(--mediumblue); 
+    font-size: 15px;
+    font-weight: bolder;
+
 }
 
 a:hover{
+
     text-decoration: none;
     color: var(--orange);
     font-weight: bolder;
+    
     }
 
+@media (min-width: 1100){
+
+    section{
+        width: 150px;
+        height: 300px;
+    }
+
+    div.buttons{
+
+    }
+}
