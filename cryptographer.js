@@ -1,6 +1,7 @@
 function buttonEncrypt() {
 
     let first = document.querySelector('.userTxt').value; // text encrypted already
+    let image = document.querySelector('.message').value;
     let encryptedTxt = "";
     if (first != "") {
 
@@ -32,6 +33,7 @@ function buttonEncrypt() {
 
         } 
 
+        image.style.backgroundImage = "none";
         document.querySelector('.message').value = encryptedTxt;
         document.querySelector('.userTxt').value = "";
         console.log(encryptedTxt);

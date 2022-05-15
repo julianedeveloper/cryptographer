@@ -15,6 +15,7 @@
 }
 
 body{
+
     background-color: var(--mediumblue);    
     margin: 0px;
     
@@ -36,15 +37,16 @@ header {
 }
 
 h1{
+
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 3px;
 }
 
 p{
+
     padding: 10px;
-    font-family: monospace;
-    
+    font-family: monospace;  
 }
 
 main {
@@ -182,15 +184,14 @@ section.right-side{
     margin: auto;
     padding: 10px;
     text-align: left;
-    color: white;
-    background-color: var(--mediumblue );
-    background-image: url(images/undraw_the_search_s0xf.svg);
+    color: var(--darkblue);
+    background-color: var(--softblue );
+    background-position: center center;
+    background-image: url(images/search.png);
     background-repeat: no-repeat;
-    width: 100px;
-    height: 300px;
-    border: transparent;
+    border: 1px solid var(--orange);
     border-radius: 10px;
-    outline: 0px;
+    outline: var(--orange);
     resize: none;
 
 }
@@ -232,7 +233,7 @@ div.copy{
 footer{
 
     display: flex;  
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     align-content: center;
     justify-content: space-between;
@@ -246,9 +247,10 @@ footer{
 }
 
 footer > a {
+
     display: flex;
+    margin: auto;
     text-decoration: none;
-    
     font-family: sans-serif;
     font-size: 15px;
     color: var(--softblue);
@@ -257,7 +259,7 @@ footer > a {
 footer > a:hover {
 
     text-decoration: none;
-    color: var(--orange);
+    color: var(--darkblue);
     font-weight: bolder;
     
     }
