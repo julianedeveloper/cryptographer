@@ -70,6 +70,8 @@ section.left-side{
     height: 450px;
     margin-top: 25px;
     border-radius: 7px 0px 0px 7px;
+    border: 1px solid var(--orange);
+    border-right: transparent;
     padding: 30px;
     background-color: var(--softblue); 
 
@@ -172,6 +174,8 @@ section.right-side{
     padding: 30px;
     margin-top: 25px;
     border-radius: 0px 7px 7px 0px;
+    border: 1px solid var(--orange);
+    border-left: transparent;
     width: auto;
     height: 450px;
     background-color: var(--softblue);
@@ -189,7 +193,7 @@ section.right-side{
     background-position: center center;
     background-image: url(images/search.png);
     background-repeat: no-repeat;
-    border: 1px solid var(--orange);
+    border: 1px solid var(--darkblue);
     border-radius: 10px;
     outline: var(--orange);
     resize: none;
@@ -260,6 +264,7 @@ footer > a:hover {
 
     text-decoration: none;
     color: var(--darkblue);
+    font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     
     }
@@ -283,6 +288,7 @@ footer > a:hover {
         height: 450px;
         padding: 30px;
         background-color: var(--softblue); 
+        border: 1px solid var(--orange);
     
     }
     
@@ -311,6 +317,7 @@ footer > a:hover {
         justify-content: center;
         padding: 30px;
         background-color: var(--softblue);
+        border: 1px solid var(--orange);
     }
     
     .message{

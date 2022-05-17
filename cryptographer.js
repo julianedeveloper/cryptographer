@@ -1,7 +1,8 @@
+let image = document.querySelector('.message');
+
 function buttonEncrypt() {
 
     let first = document.querySelector('.userTxt').value; // text encrypted already
-    let image = document.querySelector('.message').value;
     let encryptedTxt = "";
     if (first != "") {
 
@@ -33,10 +34,10 @@ function buttonEncrypt() {
 
         } 
 
-        image.style.backgroundImage = "none";
         document.querySelector('.message').value = encryptedTxt;
         document.querySelector('.userTxt').value = "";
         console.log(encryptedTxt);
+        image.style.backgroundImage = 'none';
 
     } else {
 
@@ -66,12 +67,20 @@ function buttonDecrypt() {
         document.querySelector('.message').value = decryptedTxt;
         console.log(decryptedTxt);
         document.querySelector('.userTxt').value = "";
+        image.style.backgroundImage = 'none';
         
     } else {
 
         alert('First of all, insert a message to decrypt please.');
 
     }
+}
+
+function backgroundImage() {
+
+    let imageBack = document.querySelector('.search.png');
+
+    imageBack.style.backgroundImage = "url('images/search.png')";
 }
 
 function buttonCopy() {
@@ -86,6 +95,7 @@ function buttonCopy() {
         alert ('Text sucessfully copied!');
         document.querySelector('.message').value = "";
         document.querySelector('.userTxt').value = "";
+        backgroundImage();
     }
 }
 
