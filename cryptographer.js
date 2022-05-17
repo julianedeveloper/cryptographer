@@ -78,7 +78,7 @@ function buttonDecrypt() {
 
 function backgroundImage() {
 
-    let imageBack = document.querySelector('.search.png');
+    let imageBack = document.querySelector('.message');
 
     imageBack.style.backgroundImage = "url('images/search.png')";
 }
